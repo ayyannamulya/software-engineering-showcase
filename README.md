@@ -28,10 +28,17 @@ Each project folder contains:
 
 ```
 project-name/
-├── README.md          # Project overview, architecture, and setup guide
-├── screenshots/       # UI screenshots and demo previews
-├── docs/              # Architecture diagrams and technical documentation
-└── src/               # Code samples and key implementation snippets
+├── README.md
+├── screenshots/
+│   ├── overview.png
+│   ├── dashboard.png
+│   └── mobile.png
+├── docs/
+│   ├── architecture.md
+│   └── database-schema.md
+└── api-reference/
+    ├── overview.md
+    └── endpoints.md
 ```
 
 ---
