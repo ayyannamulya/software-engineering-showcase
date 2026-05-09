@@ -2,7 +2,7 @@
 
 # 🏥 WelorraCare
 
-### *A production-grade Hospital Management System engineered to reflect how clinical environments actually operate — patients self-register, build their medical profile, and book appointments with available doctors; doctors manage their incoming queue, approve or reject requests, conduct examinations, and administer post-consultation medications; administrators maintain full operational visibility and control across every entity in the system, from staff and doctor management to patient records and appointment oversight. Three isolated roles, one coherent platform, and a data model designed so that no role ever sees what it shouldn't.*
+### *A production-grade Hospital Management System engineered to reflect how clinical environments actually operate — patients self-register, build their medical profile, and book appointments with available doctors; doctors manage their incoming queue, approve or reject requests, conduct examinations, and administer post-consultation medications.*
 
 ![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -14,14 +14,14 @@
 ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-<br/>
+<!-- <br/> -->
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://your-demo-url.com)
+<!-- [![Live Demo](https://img.shields.io/badge/Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://your-demo-url.com)
 [![Documentation](https://img.shields.io/badge/Documentation-FF6B35?style=for-the-badge&logo=gitbook&logoColor=white)](./docs/architecture.md)
 [![Portfolio](https://img.shields.io/badge/Portfolio-CC785C?style=for-the-badge)](https://yourportfolio.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourhandle)
 
-<br/>
+<br/> -->
 
 ![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
@@ -236,5 +236,6 @@ Solution: Admin-only doctor creation via a server action that sets Clerk `public
 ## 🔗 Connect & Explore
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
+[![Documentation](https://img.shields.io/badge/Documentation-FF6B35?style=for-the-badge&logo=gitbook&logoColor=white)](./docs/architecture.md)
 [![Portfolio](https://img.shields.io/badge/Portfolio-CC785C?style=for-the-badge&logoColor=white)](#)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
