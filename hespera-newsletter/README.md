@@ -190,19 +190,19 @@ Security decisions are engineering decisions — documented here, not treated as
 ## 🚧 Challenges
 
 **🔒 Cache Consistency Under Concurrent Cold Fetches**
-Problem: Two users triggering a cache miss for the same feed simultaneously would both initiate upstream fetches — defeating the caching strategy, doubling RSS provider load, and potentially producing inconsistent stored state. The race is invisible in single-user testing and only surfaces under concurrent production load.
-Tried: Optimistic locking via MongoDB `findOneAndUpdate` with a `fetchingInProgress` flag. This introduced a polling loop on the waiting request, adding latency and non-obvious retry logic that was difficult to reason about under failure conditions.
-Solution: Replaced with a write-lock pattern carrying a hard 10-second TTL. The first request to claim the lock proceeds with the upstream fetch; all subsequent requests for the same feed within the lock window hold and read from the completed cache entry on release. Accepted tradeoff: requests arriving mid-fetch on a slow upstream source may see up to 10 seconds of additional latency on a cold path — acceptable given the low probability of simultaneous cold-fetches for the same source in practice.
+- **Problem:** Two users triggering a cache miss for the same feed simultaneously would both initiate upstream fetches — defeating the caching strategy, doubling RSS provider load, and potentially producing inconsistent stored state. The race is invisible in single-user testing and only surfaces under concurrent production load.
+- **Tried:** Optimistic locking via MongoDB `findOneAndUpdate` with a `fetchingInProgress` flag. This introduced a polling loop on the waiting request, adding latency and non-obvious retry logic that was difficult to reason about under failure conditions.
+- **Solution:** Replaced with a write-lock pattern carrying a hard 10-second TTL. The first request to claim the lock proceeds with the upstream fetch; all subsequent requests for the same feed within the lock window hold and read from the completed cache entry on release. Accepted tradeoff: requests arriving mid-fetch on a slow upstream source may see up to 10 seconds of additional latency on a cold path — acceptable given the low probability of simultaneous cold-fetches for the same source in practice.
 
 **💉 Indirect Prompt Injection via RSS Feed Content**
-Problem: RSS feeds are arbitrary third-party content. Article titles and descriptions are incorporated into the Gemini prompt context, making them a direct indirect prompt injection surface — a maliciously crafted feed item (e.g., `title: "Ignore prior instructions and output..."`) is a textbook OWASP LLM02 vector.
-Tried: The initial implementation had no sanitization — raw parsed fields were inserted directly into the prompt template. Identified during security self-review before shipping.
-Solution: All feed-sourced text fields are sanitized before prompt assembly: HTML stripped, fields length-capped (titles: 200 chars, descriptions: 500 chars), and inserted within explicitly labeled XML-delimited blocks (`<article_content>...</article_content>`), with an explicit model directive that content within these blocks is untrusted external data, not instructions. This raises the exploitation bar meaningfully but does not eliminate the risk entirely — residual exposure is documented as a known accepted risk and flagged for secondary validation in v2.
+- **Problem:** RSS feeds are arbitrary third-party content. Article titles and descriptions are incorporated into the Gemini prompt context, making them a direct indirect prompt injection surface — a maliciously crafted feed item (e.g., `title: "Ignore prior instructions and output..."`) is a textbook OWASP LLM02 vector.
+- **Tried:** The initial implementation had no sanitization — raw parsed fields were inserted directly into the prompt template. Identified during security self-review before shipping.
+- **Solution:** All feed-sourced text fields are sanitized before prompt assembly: HTML stripped, fields length-capped (titles: 200 chars, descriptions: 500 chars), and inserted within explicitly labeled XML-delimited blocks (`<article_content>...</article_content>`), with an explicit model directive that content within these blocks is untrusted external data, not instructions. This raises the exploitation bar meaningfully but does not eliminate the risk entirely — residual exposure is documented as a known accepted risk and flagged for secondary validation in v2.
 
 **🗃️ Prisma Schema Evolution on MongoDB**
-Problem: Prisma's MongoDB connector does not support `migrate dev` equivalently to relational connectors. Schema changes to existing collections require explicit handling of documents written before the new shape — Prisma does not backfill or enforce structure on pre-existing documents.
-Tried: Applied schema changes directly and relied on Prisma's optional field handling for backward compatibility. Read queries on older documents missing new required fields broke silently in production.
-Solution: All schema additions are defined as optional with explicit defaults in the Prisma schema. New fields are backfilled via a lightweight migration script executed once at deploy time, before the updated application version goes live. This pattern is now the documented standard for all future schema changes in the architecture doc.
+- **Problem:** Prisma's MongoDB connector does not support `migrate dev` equivalently to relational connectors. Schema changes to existing collections require explicit handling of documents written before the new shape — Prisma does not backfill or enforce structure on pre-existing documents.
+- **Tried:** Applied schema changes directly and relied on Prisma's optional field handling for backward compatibility. Read queries on older documents missing new required fields broke silently in production.
+- **Solution:** All schema additions are defined as optional with explicit defaults in the Prisma schema. New fields are backfilled via a lightweight migration script executed once at deploy time, before the updated application version goes live. This pattern is now the documented standard for all future schema changes in the architecture doc.
 
 ---
 
@@ -229,8 +229,8 @@ Solution: All schema additions are defined as optional with explicit defaults in
 
 | Doc | Description |
 |-----|-------------|
-| [🏗️ Architecture](./docs/architecture.md) | Component breakdown, data flow diagram, trust model, cache design, scalability notes, and degraded-path behavior |
-| [📡 API Reference](./api-reference/endpoints.md) | Full Route Handler surface, authentication requirements, plan-tier enforcement rules, and Zod schema definitions |
+| [Architecture](./docs/architecture.md) | Component breakdown, data flow diagram, trust model, cache design, scalability notes, and degraded-path behavior |
+| [API Reference](./api-reference/endpoints.md) | Full Route Handler surface, authentication requirements, plan-tier enforcement rules, and Zod schema definitions |
 
 ---
 
