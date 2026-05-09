@@ -193,19 +193,19 @@ Security decisions are engineering decisions — documented here, not treated as
 ## 🚧 Challenges
 
 **⚡ Orchestrating Parallel AI Jobs Without Infrastructure Overhead**
-Problem: Six sequential AI generation calls would produce a 5-minute wait — long enough to break the user experience entirely. Naive parallelism via `Promise.all` in a serverless function would hit execution timeout limits on long episodes and provide no retry path on transient failures.
-Tried: Initial prototype used `Promise.all` inside a single Next.js API route. This worked on short episodes but timed out reliably on episodes over 30 minutes, and any single Gemini failure aborted the entire batch.
-Solution: Migrated generation to Inngest with each platform as an isolated step. Inngest handles fan-out, step-level persistence, and retry automatically — a failed LinkedIn generation step retries independently without re-running transcription or any other completed step. Accepted tradeoff: each step must be idempotent and self-contained, which required restructuring the prompt assembly to carry full context rather than relying on shared in-memory state.
+- **Problem:** Six sequential AI generation calls would produce a 5-minute wait — long enough to break the user experience entirely. Naive parallelism via `Promise.all` in a serverless function would hit execution timeout limits on long episodes and provide no retry path on transient failures.
+- **Tried:** Initial prototype used `Promise.all` inside a single Next.js API route. This worked on short episodes but timed out reliably on episodes over 30 minutes, and any single Gemini failure aborted the entire batch.
+- **Solution:** Migrated generation to Inngest with each platform as an isolated step. Inngest handles fan-out, step-level persistence, and retry automatically — a failed LinkedIn generation step retries independently without re-running transcription or any other completed step. Accepted tradeoff: each step must be idempotent and self-contained, which required restructuring the prompt assembly to carry full context rather than relying on shared in-memory state.
 
 **🔄 Real-Time Progress Without Polling**
-Problem: With six parallel jobs running for up to 90 seconds, the user needs live visibility into which steps have completed — a static loading spinner is not acceptable UX at this time scale. Implementing polling from the client adds latency, hammers the server, and still feels laggy compared to push updates.
-Tried: Initial implementation used a 2-second polling interval against a Next.js API route that queried Convex for job state. This worked but added visible lag between step completion and UI update, and generated unnecessary load.
-Solution: Replaced polling with Convex reactive queries. The client subscribes to a Convex query keyed by `episodeId`; Convex pushes a diff to the client the moment any Inngest step writes its result. Update latency dropped to under 200ms from step completion, with zero client-side orchestration code. The tradeoff is Convex as a required dependency — this pattern doesn't work with a traditional REST datastore.
+- **Problem:** With six parallel jobs running for up to 90 seconds, the user needs live visibility into which steps have completed — a static loading spinner is not acceptable UX at this time scale. Implementing polling from the client adds latency, hammers the server, and still feels laggy compared to push updates.
+- **Tried:** Initial implementation used a 2-second polling interval against a Next.js API route that queried Convex for job state. This worked but added visible lag between step completion and UI update, and generated unnecessary load.
+- **Solution:** Replaced polling with Convex reactive queries. The client subscribes to a Convex query keyed by `episodeId`; Convex pushes a diff to the client the moment any Inngest step writes its result. Update latency dropped to under 200ms from step completion, with zero client-side orchestration code. The tradeoff is Convex as a required dependency — this pattern doesn't work with a traditional REST datastore.
 
 **🎙️ Speaker Diarization Accuracy on Overlapping Audio**
-Problem: AssemblyAI's diarization model struggles with segments where two speakers overlap or interrupt each other — common in interview formats. Overlapping segments were either misattributed or collapsed into a single speaker, breaking quote attribution in downstream content generation.
-Tried: Increasing the `speakers_expected` parameter to give the model more signal. Had minimal effect on overlap segments specifically.
-Solution: Post-processed the diarization output to flag low-confidence segments (confidence score < 0.7) and exclude them from quote attribution in the Gemini prompts. High-confidence segments drive social copy and key moments; overlapping segments contribute to the summary context but are not attributed to a specific speaker. Accepted tradeoff: some genuine quotes are lost from social copy — preferable to misattribution, which would be visible and embarrassing in published content.
+- **Problem:** AssemblyAI's diarization model struggles with segments where two speakers overlap or interrupt each other — common in interview formats. Overlapping segments were either misattributed or collapsed into a single speaker, breaking quote attribution in downstream content generation.
+- **Tried:** Increasing the `speakers_expected` parameter to give the model more signal. Had minimal effect on overlap segments specifically.
+- **Solution:** Post-processed the diarization output to flag low-confidence segments (confidence score < 0.7) and exclude them from quote attribution in the Gemini prompts. High-confidence segments drive social copy and key moments; overlapping segments contribute to the summary context but are not attributed to a specific speaker. Accepted tradeoff: some genuine quotes are lost from social copy — preferable to misattribution, which would be visible and embarrassing in published content.
 
 ---
 
@@ -233,8 +233,8 @@ Solution: Post-processed the diarization output to flag low-confidence segments 
 
 | Doc | Description |
 |-----|-------------|
-| [🏗️ Architecture](./docs/architecture.md) | Component breakdown, Inngest fan-out topology, Convex schema, trust model, retry behavior |
-| [📡 API Reference](./api-reference/endpoints.md) | Route Handler surface, auth requirements, plan-tier enforcement, file upload constraints |
+| [Architecture](./docs/architecture.md) | Component breakdown, Inngest fan-out topology, Convex schema, trust model, retry behavior |
+| [API Reference](./api-reference/endpoints.md) | Route Handler surface, auth requirements, plan-tier enforcement, file upload constraints |
 
 ---
 
