@@ -235,12 +235,3 @@ Security decisions are engineering decisions — documented here, not treated as
 |-----|-------------|
 | [Architecture](./docs/architecture.md) | Component breakdown, Inngest fan-out topology, Convex schema, trust model, retry behavior |
 | [API Reference](./api-reference/endpoints.md) | Route Handler surface, auth requirements, plan-tier enforcement, file upload constraints |
-
----
-
-## 🔗 Connect & Explore
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
-[![Documentation](https://img.shields.io/badge/Documentation-FF6B35?style=for-the-badge&logo=gitbook&logoColor=white)](./docs/architecture.md)
-[![Portfolio](https://img.shields.io/badge/Portfolio-CC785C?style=for-the-badge&logoColor=white)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
