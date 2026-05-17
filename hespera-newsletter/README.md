@@ -1,5 +1,9 @@
 <div align="center">
 
+![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
+![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
+
 # 📰 Hespera — Modern Newsletter Generator
 
 ### *Transform your RSS feeds into polished, AI-curated newsletters in seconds — built for creators who publish consistently without the burnout.*
@@ -15,15 +19,6 @@
 ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-
-<!-- <br/> -->
-
-![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
-![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
-![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
-
-
-<!-- <br/> -->
 
 > 🔒 **Showcase Repo** — Source code is private. This repository documents architecture, design decisions, and engineering results. All examples use sanitized data.
 
