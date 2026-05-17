@@ -1,4 +1,8 @@
 <div align="center">
+        
+![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
+![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
 
 # 🎙️ Hawken — AI Podcast Content Engine
 
@@ -14,10 +18,6 @@
 ![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=flat-square&logo=clerk&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-
-![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
-![Version](https://img.shields.io/badge/Version-0.1.0-555555?style=flat-square)
-![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
 
 > 🔒 **Showcase Repo** — Source code is private. This repository documents architecture, design decisions, and engineering results. All examples use sanitized data.
 
