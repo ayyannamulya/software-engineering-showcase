@@ -4,7 +4,7 @@
 ![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
 ![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
 
-# 🏥 WelorraCare Hospital Management System
+# 🏥 WelorraCare — Hospital Management System
 
 ### *A production-grade Hospital Management System engineered to reflect how clinical environments actually operate — patients self-register, build their medical profile, and book appointments with available doctors; doctors manage their incoming queue, approve or reject requests, conduct examinations, and administer post-consultation medications.*
 
@@ -227,11 +227,3 @@ Solution: Admin-only doctor creation via a server action that sets Clerk `public
 | [Architecture](./docs/architecture.md) | Full schema breakdown, component dependency graph, trust model, Clerk integration detail |
 | [Role Guide](./docs/roles.md) | What each role can read and write, provisioning flow, and permission boundaries |
 
----
-
-## 🔗 Connect & Explore
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
-[![Documentation](https://img.shields.io/badge/Documentation-FF6B35?style=for-the-badge&logo=gitbook&logoColor=white)](./docs/architecture.md)
-[![Portfolio](https://img.shields.io/badge/Portfolio-CC785C?style=for-the-badge&logoColor=white)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
