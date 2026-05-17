@@ -1,5 +1,9 @@
 <div align="center">
 
+![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
+![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
+
 # 🏥 WelorraCare
 
 ### *A production-grade Hospital Management System engineered to reflect how clinical environments actually operate — patients self-register, build their medical profile, and book appointments with available doctors; doctors manage their incoming queue, approve or reject requests, conduct examinations, and administer post-consultation medications.*
@@ -22,11 +26,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourhandle)
 
 <br/> -->
-
-![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
-![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
-![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
-![Schema](https://img.shields.io/badge/DB_Tables-14-blue?style=flat-square)
 
 <br/>
 
