@@ -45,10 +45,7 @@ project-name/
 
 ## 📫 Connect
 
-- 🌐 Portfolio: [ayyannamulya.dev](https://ayyanna-mulya.vercel.app)
-- 💼 LinkedIn: [in/noviyartimulyadi](https://www.linkedin.com/in/noviyartimulyadi)
-- 📩 Email: [noviayya1121@gmail.com](noviayya1121@gmail.com)
-
+[🎯 Portfolio](https://ayyanna-mulya.vercel.app) &nbsp;·&nbsp; [💼 LinkedIn](www.linkedin.com/in/noviyartimulyadi) &nbsp;·&nbsp; [🐙 GitHub](https://github.com/ayyannamulya) &nbsp;·&nbsp; [📧 Gmail](noviayya1121@gmail.com)
 ---
 
 > ⭐ All projects are showcase versions. Full source code with proprietary features is kept private. Screenshots, documentation, and code samples are provided to demonstrate technical capabilities.
