@@ -11,7 +11,7 @@
 ![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
 ![AssemblyAI](https://img.shields.io/badge/AssemblyAI-7B2FBE?style=for-the-badge&logoColor=white)
 ![Convex](https://img.shields.io/badge/Convex-EE342F?style=for-the-badge&logoColor=white)
 ![Inngest](https://img.shields.io/badge/Inngest-4F46E5?style=for-the-badge&logoColor=white)
