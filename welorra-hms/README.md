@@ -4,7 +4,7 @@
 ![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
 ![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
 
-# 🏥 WelorraCare
+# 🏥 WelorraCare Hospital Management System
 
 ### *A production-grade Hospital Management System engineered to reflect how clinical environments actually operate — patients self-register, build their medical profile, and book appointments with available doctors; doctors manage their incoming queue, approve or reject requests, conduct examinations, and administer post-consultation medications.*
 
