@@ -12,7 +12,7 @@
 | 02 | **WelorraCare HMS** | End-to-end patient workflow system with role-based access control and queue management | Laravel • MySQL • REST APIs • RBAC | [Repo](#) |
 | 03 | **Hespera Newsletter** | Encrypted messaging platform with real-time notifications and user presence | Next.js • Socket.io • MongoDB • JWT | [Repo](#) |
 | 04 | **E-Commerce Platform** | Full-stack shopping platform with product management and payment integration | React • Node.js • PostgreSQL • Stripe • Prisma | [Demo](#) · [Repo](#) |
-| 05 | **AI Content Generator** | Web application for generating and managing AI-powered content using LLM APIs | Next.js • TypeScript • OpenAI API • MongoDB | [Demo](#) · [Repo](#) |
+| 05 | **Qesha Assistant** | Web application for generating and managing AI-powered content using LLM APIs | Next.js • TypeScript • OpenAI API • MongoDB | [Demo](#) · [Repo](#) |
 | 06 | **Inventory Management System** | Multi-user inventory tracking system with reporting and data export features | Node.js • Express • MySQL • REST APIs | [Repo](#) |
 | 07 | **Authentication Boilerplate** | Production-ready authentication system with JWT, OAuth2, and role-based permissions | Node.js • Express • PostgreSQL • Prisma • JWT | [Repo](#) |
 | 08 | **Company Profile Website** | Responsive company profile website with CMS integration and dynamic content | Next.js • TypeScript • Sanity • Tailwind CSS | [Demo](#) · [Repo](#) |
