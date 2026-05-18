@@ -26,10 +26,11 @@
 ![BetterAuth](https://img.shields.io/badge/BetterAuth-1a1a1a?style=flat-square&logo=auth0&logoColor=white)
 ![Tavily](https://img.shields.io/badge/Tavily-00C7B7?style=flat-square&logo=searchengin&logoColor=white)
 
+<br/>
 
-![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
-![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
-![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
+[🌐 Live Demo](#) &nbsp;·&nbsp; [📑 Documentation](#)
+
+[🎯 Portfolio](https://ayyanna-mulya.vercel.app) &nbsp;·&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/noviyartimulyadi) &nbsp;·&nbsp; [🐙 GitHub](https://github.com/ayyannamulya) &nbsp;·&nbsp; [📧 Gmail](mailto:noviayya1121@gmail.com)
 
 <br/>
 
