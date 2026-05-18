@@ -1,4 +1,8 @@
 <div align="center">
+          
+![Status](https://img.shields.io/badge/Status-Production-2ea44f?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.0.0-555555?style=flat-square)
+![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
 
 # 🧠 Qesha — Second-Brain AI Agent
 
