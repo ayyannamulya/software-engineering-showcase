@@ -10,7 +10,7 @@
 |---|---------|-------------|------------|-------|
 | 01 | **Hawken Podcast Analyzer** | Smart task management system with AI-generated summaries and priority suggestions | Next.js • Node.js • PostgreSQL • OpenAI API • Prisma | [Repo](https://hawken-podcast.vercel.app/) [Docs](#) |
 | 02 | **WelorraCare HMS** | End-to-end patient workflow system with role-based access control and queue management | Laravel • MySQL • REST APIs • RBAC | [Repo](#) |
-| 03 | **Real-Time Chat Application** | Encrypted messaging platform with real-time notifications and user presence | Next.js • Socket.io • MongoDB • JWT | [Repo](#) |
+| 03 | **Hespera Newsletter** | Encrypted messaging platform with real-time notifications and user presence | Next.js • Socket.io • MongoDB • JWT | [Repo](#) |
 | 04 | **E-Commerce Platform** | Full-stack shopping platform with product management and payment integration | React • Node.js • PostgreSQL • Stripe • Prisma | [Demo](#) · [Repo](#) |
 | 05 | **AI Content Generator** | Web application for generating and managing AI-powered content using LLM APIs | Next.js • TypeScript • OpenAI API • MongoDB | [Demo](#) · [Repo](#) |
 | 06 | **Inventory Management System** | Multi-user inventory tracking system with reporting and data export features | Node.js • Express • MySQL • REST APIs | [Repo](#) |
