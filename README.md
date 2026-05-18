@@ -8,7 +8,7 @@
 
 | # | Project | Description | Tech Stack | Links |
 |---|---------|-------------|------------|-------|
-| 01 | **AI-Powered Task Manager** | Smart task management system with AI-generated summaries and priority suggestions | Next.js • Node.js • PostgreSQL • OpenAI API • Prisma | [Repo](#) [Docs](#) [Swagger](#)  |
+| 01 | **Hawken Podcast Analyzer** | Smart task management system with AI-generated summaries and priority suggestions | Next.js • Node.js • PostgreSQL • OpenAI API • Prisma | [Repo](#) [Docs](#) [Swagger](#)  |
 | 02 | **Clinic Management System** | End-to-end patient workflow system with role-based access control and queue management | Laravel • MySQL • REST APIs • RBAC | [Repo](#) |
 | 03 | **Real-Time Chat Application** | Encrypted messaging platform with real-time notifications and user presence | Next.js • Socket.io • MongoDB • JWT | [Repo](#) |
 | 04 | **E-Commerce Platform** | Full-stack shopping platform with product management and payment integration | React • Node.js • PostgreSQL • Stripe • Prisma | [Demo](#) · [Repo](#) |
