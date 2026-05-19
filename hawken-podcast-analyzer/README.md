@@ -233,9 +233,9 @@ Security decisions are engineering decisions — documented here, not treated as
 
 ---
 
-## 📄 Documentation
+<!-- ## 📄 Documentation
 
 | Doc | Description |
 |-----|-------------|
 | [Architecture](./docs/architecture.md) | Component breakdown, Inngest fan-out topology, Convex schema, trust model, retry behavior |
-| [API Reference](./api-reference/endpoints.md) | Route Handler surface, auth requirements, plan-tier enforcement, file upload constraints |
+| [API Reference](./api-reference/endpoints.md) | Route Handler surface, auth requirements, plan-tier enforcement, file upload constraints | -->
