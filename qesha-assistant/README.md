@@ -236,11 +236,3 @@ Subscription gate: Stripe plan checked at middleware layer; feature flags propag
 | [Architecture](./docs/architecture.md) | Component breakdown, data flow, trust model, agent execution model |
 | [API Reference](./api-reference/endpoints.md) | Hono endpoint surface, auth requirements, tool schemas, rate limits |
 
----
-
-## 🔗 Connect & Explore
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
-[![Documentation](https://img.shields.io/badge/Documentation-FF6B35?style=for-the-badge&logo=gitbook&logoColor=white)](./docs/architecture.md)
-[![Portfolio](https://img.shields.io/badge/Portfolio-CC785C?style=for-the-badge&logoColor=white)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
