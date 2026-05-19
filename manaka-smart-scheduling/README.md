@@ -228,7 +228,7 @@ Solution: Committed to Sanity TypeGen with strictly typed query functions — al
 | 📊 Admin Dashboard | ![Dashboard](./screenshots/dashboard.png) |
 | 💳 Pricing & Plan Gate | ![Pricing](./screenshots/pricing.png) |
 
----
+<!-- ---
 
 ## 📄 Documentation
 
@@ -236,4 +236,4 @@ Solution: Committed to Sanity TypeGen with strictly typed query functions — al
 |-----|-------------|
 | [Architecture](./docs/architecture.md) | Component breakdown, Google Calendar integration model, lazy deletion pattern |
 | [API Reference](./api-reference/endpoints.md) | Server Action surface, auth requirements, plan limit enforcement |
-| [OAuth Setup](./docs/oauth-setup.md) | Google Cloud Console config, credential scopes, token storage model |
+| [OAuth Setup](./docs/oauth-setup.md) | Google Cloud Console config, credential scopes, token storage model | -->
