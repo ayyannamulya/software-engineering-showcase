@@ -226,10 +226,10 @@ Solution: Opted out specific Sanity Live subscription components from compiler o
 
 ---
 
-<!-- ## 📄 Documentation
+## 📄 Documentation
 
 | Doc | Description |
 |-----|-------------|
 | [Architecture](./docs/architecture.md) | Component breakdown, data flow, Sanity as datastore model, real-time subscription design |
 | [API Reference](./api-reference/endpoints.md) | Server Action surface, Stripe webhook handlers, AI tool schemas |
-| [AI Safety](./docs/ai-safety.md) | Tool execution isolation, Clerk AgentKit session scoping, prompt injection mitigations | -->
+| [AI Safety](./docs/ai-safety.md) | Tool execution isolation, Clerk AgentKit session scoping, prompt injection mitigations |
