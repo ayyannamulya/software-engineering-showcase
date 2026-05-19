@@ -220,10 +220,10 @@ Solution: Admin-only doctor creation via a server action that sets Clerk `public
 
 ---
 
-## 📄 Documentation
+<!-- ## 📄 Documentation
 
 | Doc | Description |
 |-----|-------------|
 | [Architecture](./docs/architecture.md) | Full schema breakdown, component dependency graph, trust model, Clerk integration detail |
-| [Role Guide](./docs/roles.md) | What each role can read and write, provisioning flow, and permission boundaries |
+| [Role Guide](./docs/roles.md) | What each role can read and write, provisioning flow, and permission boundaries | -->
 
