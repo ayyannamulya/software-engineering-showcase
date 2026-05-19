@@ -225,10 +225,10 @@ Security decisions are engineering decisions — documented here, not treated as
 | 📚 Newsletter History (Pro) | ![History](./screenshots/history.png) |
 
 ---
-
+<!-- 
 ## 📄 Documentation
 
 | Doc | Description |
 |-----|-------------|
 | [Architecture](./docs/architecture.md) | Component breakdown, data flow diagram, trust model, cache design, scalability notes, and degraded-path behavior |
-| [API Reference](./api-reference/endpoints.md) | Full Route Handler surface, authentication requirements, plan-tier enforcement rules, and Zod schema definitions |
+| [API Reference](./api-reference/endpoints.md) | Full Route Handler surface, authentication requirements, plan-tier enforcement rules, and Zod schema definitions | -->
