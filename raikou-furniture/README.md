@@ -224,7 +224,7 @@ Solution: Opted out specific Sanity Live subscription components from compiler o
 | 📊 Admin Dashboard | ![Dashboard](./screenshots/dashboard.png) |
 | 💳 Checkout | ![Checkout](./screenshots/checkout.png) |
 
----
+<!-- ---
 
 ## 📄 Documentation
 
@@ -232,4 +232,4 @@ Solution: Opted out specific Sanity Live subscription components from compiler o
 |-----|-------------|
 | [Architecture](./docs/architecture.md) | Component breakdown, data flow, Sanity as datastore model, real-time subscription design |
 | [API Reference](./api-reference/endpoints.md) | Server Action surface, Stripe webhook handlers, AI tool schemas |
-| [AI Safety](./docs/ai-safety.md) | Tool execution isolation, Clerk AgentKit session scoping, prompt injection mitigations |
+| [AI Safety](./docs/ai-safety.md) | Tool execution isolation, Clerk AgentKit session scoping, prompt injection mitigations | -->
