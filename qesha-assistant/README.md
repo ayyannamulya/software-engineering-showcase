@@ -228,11 +228,11 @@ Subscription gate: Stripe plan checked at middleware layer; feature flags propag
 | 📝 Knowledge Store (Notes) | ![Notes](./screenshots/notes.png) |
 
 ---
-
+<!-- 
 ## 📄 Documentation
 
 | Doc | Description |
 |-----|-------------|
 | [Architecture](./docs/architecture.md) | Component breakdown, data flow, trust model, agent execution model |
-| [API Reference](./api-reference/endpoints.md) | Hono endpoint surface, auth requirements, tool schemas, rate limits |
+| [API Reference](./api-reference/endpoints.md) | Hono endpoint surface, auth requirements, tool schemas, rate limits | -->
 
