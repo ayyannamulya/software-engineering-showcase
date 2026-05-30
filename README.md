@@ -11,14 +11,12 @@
 
 ## 📊 At a Glance
 
-<table>
-<tr>
-<td align="center"><strong>6</strong><br/>Production Projects</td>
-<td align="center"><strong>3</strong><br/>Languages</td>
-<td align="center"><strong>8+</strong><br/>Databases & ORMs</td>
-<td align="center"><strong>4</strong><br/>Deployment Targets</td>
-</tr>
-</table>
+<p>
+  <img src="https://img.shields.io/badge/📦_production_projects-6-0e7efa?style=for-the-badge&logoColor=white" alt="Production Projects"/>
+  <img src="https://img.shields.io/badge/💻_languages-3-3fb950?style=for-the-badge&logoColor=white" alt="Languages"/>
+  <img src="https://img.shields.io/badge/🗄️_databases_%26_ORMs-8+-d29922?style=for-the-badge&logoColor=white" alt="Databases and ORMs"/>
+  <img src="https://img.shields.io/badge/🚀_deployment_targets-4-8957e5?style=for-the-badge&logoColor=white" alt="Deployment Targets"/>
+</p>
 
 ---
 
