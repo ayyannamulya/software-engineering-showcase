@@ -1,55 +1,89 @@
-# 🛠️ Software Engineering Showcase
+# ⚙️ Software Engineering Showcase
 
-> Production-ready full-stack applications spanning backend architecture, AI integration, and modern frontend interfaces — built with TypeScript, Node.js, React, and Next.js.
+> Production-grade full-stack systems built for scale — backend architecture, 
+> database design, AI API integration, and real-time features shipped to 
+> production. Not tutorials. Not templates.
 
----
-
-## 🚀 Featured Projects
-
-| # | Project | Description | Tech Stack | Links |
-|---|---------|-------------|------------|-------|
-| 01 | **Hawken Podcast Analyzer** | Smart task management system with AI-generated summaries and priority suggestions | Next.js • Node.js • PostgreSQL • OpenAI API • Prisma | [Repo](https://hawken-podcast.vercel.app/) [Docs](#) |
-| 02 | **WelorraCare HMS** | End-to-end patient workflow system with role-based access control and queue management | Laravel • MySQL • REST APIs • RBAC | [Repo](#) |
-| 03 | **Hespera Newsletter** | Encrypted messaging platform with real-time notifications and user presence | Next.js • Socket.io • MongoDB • JWT | [Repo](#) |
-| 04 | **E-Commerce Platform** | Full-stack shopping platform with product management and payment integration | React • Node.js • PostgreSQL • Stripe • Prisma | [Demo](#) · [Repo](#) |
-| 05 | **Qesha Assistant** | Web application for generating and managing AI-powered content using LLM APIs | Next.js • TypeScript • OpenAI API • MongoDB | [Demo](#) · [Repo](#) |
-| 06 | **Inventory Management System** | Multi-user inventory tracking system with reporting and data export features | Node.js • Express • MySQL • REST APIs | [Repo](#) |
-| 07 | **Authentication Boilerplate** | Production-ready authentication system with JWT, OAuth2, and role-based permissions | Node.js • Express • PostgreSQL • Prisma • JWT | [Repo](#) |
-| 08 | **Company Profile Website** | Responsive company profile website with CMS integration and dynamic content | Next.js • TypeScript • Sanity • Tailwind CSS | [Demo](#) · [Repo](#) |
-| 09 | **Data Dashboard** | Real-time analytics dashboard with data visualization and export capabilities | React • Node.js • PostgreSQL • Chart.js | [Demo](#) · [Repo](#) |
-| 10 | **URL Shortener Service** | High-performance URL shortening service with analytics and custom aliases | Node.js • Express • MongoDB • Redis | [Repo](#) |
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=flat-square&logo=vercel&logoColor=white)](https://ayyanna-mulya.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/noviyartimulyadi)
 
 ---
 
+## 📊 At a Glance
 
-## 📁 Project Structure
-
-Each project folder contains:
-
-```
-project-name/
-├── README.md
-├── screenshots/
-│   ├── overview.png
-│   ├── dashboard.png
-│   └── mobile.png
-├── docs/
-│   ├── architecture.md
-│   └── database-schema.md
-└── api-reference/
-    ├── overview.md
-    └── endpoints.md
-```
+<table>
+<tr>
+<td align="center"><strong>6</strong><br/>Production Projects</td>
+<td align="center"><strong>3</strong><br/>Languages</td>
+<td align="center"><strong>8+</strong><br/>Databases & ORMs</td>
+<td align="center"><strong>4</strong><br/>Deployment Targets</td>
+</tr>
+</table>
 
 ---
 
-## 📫 Connect
+## 🚀 Projects
 
-- 🌐 Portfolio: [ayyannamulya.dev](https://ayyanna-mulya.vercel.app)
-- 💼 LinkedIn: [in/noviyartimulyadi](https://www.linkedin.com/in/noviyartimulyadi)
-- 📩 Email: [noviayya1121@gmail.com](noviayya1121@gmail.com)
+| # | Project | Description | Stack | Links |
+|---|---------|-------------|-------|-------|
+| 01 | **Hawken Podcast Analyzer** | End-to-end AI podcast engine — transforms a single audio upload into social posts, titles, timestamps, and transcripts in under 90 seconds via parallel AI processing | `Next.js` `Inngest` `AssemblyAI` `Convex` `Gemini` | [Repo](https://github.com/ayyannamulya/software-engineering-showcase/tree/main/hawken-podcast-analyzer) |
+| 02 | **WelorraCare HMS** | Three-role clinical platform — patients book, doctors manage queues and post-consultation care, admins oversee everything | `Next.js` `Clerk` `Prisma` `PostgreSQL` `Shadcn` | [Repo](https://github.com/ayyannamulya/software-engineering-showcase/tree/main/welorra-hms) |
+| 03 | **Hespera Newsletter** | AI-powered newsletter generator that transforms RSS feeds into polished ready-to-send newsletters with real-time streaming and tiered subscriptions | `Next.js` `Vercel AI SDK` `MongoDB` `Clerk` `Stripe` | [Repo](https://github.com/ayyannamulya/software-engineering-showcase/tree/main/hespera-newsletter) |
+| 04 | **Raikou Furniture Store** | E-commerce platform where customers shop with an AI assistant that knows their orders and store owners manage everything in real-time | `Next.js` `Sanity` `Zustand` `Stripe` `Vercel AI SDK` | [Repo](https://github.com/ayyannamulya/software-engineering-showcase/tree/main/raikou-furniture) |
+| 05 | **Qesha Second-Brain Agent** | Full-stack agentic AI that searches the web, extracts and summarizes URLs, and chains tools to build a persistent knowledge base | `Next.js` `Vercel AI SDK` `Hono` `BetterAuth` `Stripe` `PostgreSQL` | [Repo](https://github.com/ayyannamulya/software-engineering-showcase/tree/main/qesha-assistant) |
+| 06 | **Manaka Smart Scheduling** | Scheduling platform that syncs Google Calendar across multiple accounts, auto-generates Meet links, and serves shareable public booking pages | `Next.js` `Sanity` `Google Calendar` `Google Meet` `Shadcn` | [Repo](https://github.com/ayyannamulya/software-engineering-showcase/tree/main/manaka-smart-scheduling) |
+
 ---
 
-> ⭐ All projects are showcase versions. Full source code with proprietary features is kept private. Screenshots, documentation, and code samples are provided to demonstrate technical capabilities.
->
-> 🔒 No sensitive data, API keys, or credentials are included. All examples use mock data and sanitized configurations.
+## ⚙️ How I Build
+
+Every system here is designed around three principles:
+
+**Separation of concerns** — clean boundaries between data, business logic, 
+and presentation layers. No God objects, no leaking abstractions.
+
+**Security by default** — auth, input validation, and access control 
+are designed in, not bolted on. Every API surface is treated as untrusted.
+
+**Production-aware** — real error handling, environment-based config, 
+structured logging. Nothing here was built just to demo.
+
+---
+
+## 🛠️ Stack
+
+### Core
+`TypeScript` `JavaScript` `Python` `Node.js` `Next.js` `React` `Express` `FastAPI`
+
+### Data
+`PostgreSQL` `MongoDB` `MySQL` `Redis` `Prisma` `Drizzle` `Supabase`
+
+### AI & Integration
+`OpenAI` `Gemini` `Claude` `Vercel AI SDK` `Inngest` `AssemblyAI` `Convex`
+
+### Infrastructure
+`Docker` `GCP` `Vercel` `Sevalla` `GitHub Actions` `Nginx`
+
+---
+
+## 📁 Structure
+
+Each project ships with:
+
+`README.md` — purpose, architecture decisions, setup  
+`/docs` — system design, database schema, API reference  
+`/screenshots` — UI overview, key flows
+
+---
+
+## 🤝 Connect
+
+If you're hiring or want to collaborate — let's talk.
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-ayyanna--mulya.vercel.app-000000?style=flat-square&logo=vercel&logoColor=white)](https://ayyanna-mulya.vercel.app)
+[![Email](https://img.shields.io/badge/Email-noviayya1121@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:noviayya1121@gmail.com)
+
+---
+
+> 🔒 Showcase versions only. Full source with proprietary features is private. 
+> No API keys, credentials, or sensitive data included.
