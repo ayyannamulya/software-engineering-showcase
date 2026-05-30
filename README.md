@@ -35,23 +35,6 @@
 
 ---
 
-## ⚙️ How I Build
-
-Every system here is designed around three principles:
-
-**Separation of concerns** — clean boundaries between data, business logic, 
-and presentation layers. No God objects, no leaking abstractions.
-
-**Security by default** — auth, input validation, and access control 
-are designed in, not bolted on. Every API surface is treated as untrusted.
-
-**Production-aware** — real error handling, environment-based config, 
-structured logging. Nothing here was built just to demo.
-
----
-
-## 🛠️ Stack
-
 ## 🛠️ Stack
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
