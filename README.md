@@ -72,14 +72,5 @@ Each project ships with:
 
 ---
 
-## 🤝 Connect
-
-If you're hiring or want to collaborate — let's talk.
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-ayyanna--mulya.vercel.app-000000?style=flat-square&logo=vercel&logoColor=white)](https://ayyanna-mulya.vercel.app)
-[![Email](https://img.shields.io/badge/Email-noviayya1121@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:noviayya1121@gmail.com)
-
----
-
 > 🔒 Showcase versions only. Full source with proprietary features is private. 
 > No API keys, credentials, or sensitive data included.
